@@ -1,0 +1,43 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Legal"
+  }
+ ],
+ "creation": "2022-05-24 01:26:19.220089",
+ "developer_mode_only": 0,
+ "disable_user_customization": 1,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "loan",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Legal Department",
+ "links": [],
+ "modified": "2022-05-24 01:35:23.146022",
+ "modified_by": "Administrator",
+ "module": "Internal System",
+ "name": "Legal Department",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Legal Registery",
+   "link_to": "Legal Registery",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Legal Dashboard",
+   "link_to": "Legal",
+   "type": "Dashboard"
+  }
+ ],
+ "shortcuts_label": "Legal Department"
+}

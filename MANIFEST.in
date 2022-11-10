@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include alshabab_sc *.css
+recursive-include alshabab_sc *.csv
+recursive-include alshabab_sc *.html
+recursive-include alshabab_sc *.ico
+recursive-include alshabab_sc *.js
+recursive-include alshabab_sc *.json
+recursive-include alshabab_sc *.md
+recursive-include alshabab_sc *.png
+recursive-include alshabab_sc *.py
+recursive-include alshabab_sc *.svg
+recursive-include alshabab_sc *.txt
+recursive-exclude alshabab_sc *.pyc

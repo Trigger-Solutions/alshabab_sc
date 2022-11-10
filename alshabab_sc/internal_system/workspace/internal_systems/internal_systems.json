@@ -1,0 +1,48 @@
+{
+ "category": "Modules",
+ "charts": [
+  {
+   "chart_name": "Requests"
+  }
+ ],
+ "creation": "2021-08-12 13:18:46.710245",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "non-profit",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Internal Systems",
+ "links": [],
+ "modified": "2022-01-18 15:17:04.185436",
+ "modified_by": "Administrator",
+ "module": "Internal System",
+ "name": "Internal Systems",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 0,
+ "shortcuts": [
+  {
+   "doc_view": "List",
+   "label": "Communications management",
+   "link_to": "Communications management",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Requests",
+   "link_to": "Requests",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "",
+   "label": "Requests Dashboard",
+   "link_to": "Requests",
+   "type": "Dashboard"
+  }
+ ]
+}

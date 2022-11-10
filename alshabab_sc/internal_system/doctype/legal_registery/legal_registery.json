@@ -1,0 +1,377 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-05-23 19:47:05.434775",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "section_break_2",
+  "column_break_3",
+  "title",
+  "date",
+  "column_break_6",
+  "type",
+  "workshop_section",
+  "column_break_9",
+  "workshop_title",
+  "presenter",
+  "column_break_12",
+  "place",
+  "presenter_name",
+  "consultation_section",
+  "column_break_16",
+  "department",
+  "inquiry",
+  "column_break_19",
+  "reply",
+  "contract_section",
+  "column_break_22",
+  "employee",
+  "contract_start_date",
+  "department1",
+  "column_break_25",
+  "employee_name",
+  "contract_end_date",
+  "revised",
+  "case_section",
+  "column_break_31",
+  "first_party",
+  "court_name",
+  "column_break_34",
+  "second_party",
+  "trial_type",
+  "trial_status",
+  "meeting_section",
+  "column_break_39",
+  "meeting_date",
+  "host",
+  "host_name",
+  "column_break_42",
+  "minutes",
+  "training_section",
+  "column_break_46",
+  "attendees",
+  "duration",
+  "column_break_49",
+  "subject",
+  "attachments_section",
+  "attachment_file_1",
+  "column_break_53",
+  "attachment_file_2",
+  "more_information_section",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "LG-"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "Legal Type"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "workshop_section",
+   "fieldtype": "Section Break",
+   "label": "Workshop"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "workshop_title",
+   "fieldtype": "Data",
+   "label": "Workshop Title"
+  },
+  {
+   "fieldname": "place",
+   "fieldtype": "Data",
+   "label": "Place"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "presenter",
+   "fieldtype": "Link",
+   "label": "Presenter",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "presenter.employee_name",
+   "fieldname": "presenter_name",
+   "fieldtype": "Data",
+   "label": "Presenter Name"
+  },
+  {
+   "fieldname": "consultation_section",
+   "fieldtype": "Section Break",
+   "label": "Consultation"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "inquiry",
+   "fieldtype": "Text",
+   "label": "Inquiry"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reply",
+   "fieldtype": "Text",
+   "label": "Reply"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "contract_start_date",
+   "fieldtype": "Date",
+   "label": "Contract Start Date"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_end_date",
+   "fieldtype": "Date",
+   "label": "Contract End Date"
+  },
+  {
+   "fieldname": "department1",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "default": "0",
+   "fieldname": "revised",
+   "fieldtype": "Check",
+   "label": "Revised"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "case_section",
+   "fieldtype": "Section Break",
+   "label": "Case"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_party",
+   "fieldtype": "Data",
+   "label": "First Party"
+  },
+  {
+   "fieldname": "court_name",
+   "fieldtype": "Data",
+   "label": "Court Name"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "second_party",
+   "fieldtype": "Data",
+   "label": "Second Party"
+  },
+  {
+   "fieldname": "trial_type",
+   "fieldtype": "Select",
+   "label": "Trial Type",
+   "options": "\u0642\u0636\u0627\u064a\u0627 \u062a\u062d\u0643\u064a\u0645 \u0631\u064a\u0627\u0636\u064a\n\u0645\u062d\u0643\u0645\u0629 \u0631\u064a\u0627\u0636\u064a\u0629\n\u0623\u062e\u0631\u0649"
+  },
+  {
+   "fieldname": "trial_status",
+   "fieldtype": "Select",
+   "label": "Trial Status",
+   "options": "\u062a\u062d\u062a \u0627\u0644\u0627\u062c\u0631\u0627\u0621\n\u062d\u0643\u0645 \u0646\u0647\u0627\u0626\u064a\n\u0627\u0633\u062a\u0626\u0646\u0627\u0641\n\u062f\u0641\u0648\u0639"
+  },
+  {
+   "fieldname": "meeting_section",
+   "fieldtype": "Section Break",
+   "label": "Meeting"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "meeting_date",
+   "fieldtype": "Datetime",
+   "label": "Meeting Date"
+  },
+  {
+   "fieldname": "host",
+   "fieldtype": "Link",
+   "label": "Host",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "minutes",
+   "fieldtype": "Text",
+   "label": "Minutes"
+  },
+  {
+   "fieldname": "training_section",
+   "fieldtype": "Section Break",
+   "label": "Training"
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Int",
+   "label": "Attendees"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Text Editor",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attachment_file_1",
+   "fieldtype": "Attach",
+   "label": "Attachment File 1"
+  },
+  {
+   "fieldname": "attachment_file_2",
+   "fieldtype": "Attach",
+   "label": "Attachment File 2"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contract_section",
+   "fieldtype": "Section Break",
+   "label": "Contract"
+  },
+  {
+   "fetch_from": "host.employee_name",
+   "fieldname": "host_name",
+   "fieldtype": "Data",
+   "label": "Name"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-05-24 01:24:10.770371",
+ "modified_by": "Administrator",
+ "module": "Internal System",
+ "name": "Legal Registery",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}
