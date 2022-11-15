@@ -773,6 +773,7 @@
    "default": "0",
    "fieldname": "is_approved",
    "fieldtype": "Int",
+   "hidden": 1,
    "label": "is_approved"
   },
   {
@@ -796,7 +797,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-10-20 18:31:25.906339",
+ "modified": "2022-11-13 23:08:03.838285",
  "modified_by": "Administrator",
  "module": "Internal System",
  "name": "Requests",

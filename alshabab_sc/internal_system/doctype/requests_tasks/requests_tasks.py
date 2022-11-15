@@ -6,6 +6,7 @@ from frappe.model.document import Document
 
 class RequestsTasks(Document):
 	def on_submit(self):
+		# frappe.db.get_doc("Requests",self.sequests)
 		frappe.db.set_value('Concerned Departments',self.refrence_name,{
 				'comment':self.replay,
 				'action':"Submitted"

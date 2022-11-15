@@ -30,6 +30,7 @@ class Requests(Document):
 				requests_tasks_doc.grade = self.grade
 				requests_tasks_doc.department = item.department
 				requests_tasks_doc.more_information = self.more_informations
+				requests_tasks_doc.requests =self.name	
 				item.requests_tasks = requests_tasks_doc.insert().name
 		self.save()
 
