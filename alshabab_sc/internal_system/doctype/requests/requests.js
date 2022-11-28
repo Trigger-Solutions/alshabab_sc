@@ -104,7 +104,6 @@ frappe.ui.form.on('Requests', {
 	},
 	onload(frm)
 	{
-		
 		// if(!frm.is_new()){
 		// 	if(cur_frm.doc.concerned_departments){
 		// 		for(let i=0;i<cur_frm.doc.concerned_departments.length;i++){
