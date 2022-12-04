@@ -20,6 +20,8 @@
   "sport",
   "grade",
   "department",
+  "attachments_section",
+  "attached_file",
   "information_section",
   "more_information"
  ],
@@ -125,14 +127,26 @@
   },
   {
    "fieldname": "requests",
-   "fieldtype": "Data",
-   "label": "Requests"
+   "fieldtype": "Link",
+   "label": "Requests",
+   "options": "Requests"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "attached_file",
+   "fieldtype": "Attach",
+   "label": "Attached File",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-11-28 23:03:41.058427",
+ "modified": "2022-12-03 16:55:13.827002",
  "modified_by": "Administrator",
  "module": "Internal System",
  "name": "Requests Tasks",

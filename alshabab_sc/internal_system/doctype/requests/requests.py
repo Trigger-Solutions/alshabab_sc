@@ -20,6 +20,9 @@ class Requests(Document):
 
 	@frappe.whitelist()
 	def generate_events(self,comment):
+		file = frappe.get_all("File", fields = ["file_url","is_private"], filters = {"attached_to_doctype": self.doctype,
+		"attached_to_name":self.name}, order_by="creation desc")
+
 		for item in self.concerned_departments:
 				requests_tasks_doc = frappe.new_doc('Requests Tasks')
 				requests_tasks_doc.refrence_name = item.name
@@ -31,7 +34,13 @@ class Requests(Document):
 				requests_tasks_doc.department = item.department
 				requests_tasks_doc.more_information = self.more_informations
 				requests_tasks_doc.requests =self.name	
-				item.requests_tasks = requests_tasks_doc.insert().name
+				requests_tasks_doc.attached_file = self.attached_file
+				name = requests_tasks_doc.insert().name
+				item.requests_tasks = name
+				
+					
+
+
 		self.save()
 
 	def delete_request_task(self):
