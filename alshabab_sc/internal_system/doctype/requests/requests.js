@@ -150,7 +150,8 @@ frappe.ui.form.on('Requests', {
 						if(values.department){
 							frm.call('generate_request_task',{
 								'department':values.department,
-								'comment':values.comment
+								'comment':values.comment,
+								'attachments':cur_frm.attachments.get_attachments()
 							}).then(r=>{
 								frm.refresh_fields();
 								frappe.msgprint(__('تم التوجيه بنجاح'));
