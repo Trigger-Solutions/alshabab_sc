@@ -3,34 +3,34 @@
 
 frappe.ui.form.on('Requests', {
 	before_workflow_action: (frm) => {
-		console.log(frm.doc.workflow_state)
-		console.log(frm.selected_workflow_action)
-		if (
-            frm.doc.workflow_state == "موجه" &&
-            frm.selected_workflow_action == "اعتمد"
-        ){
-			let status = 0
-			if(cur_frm.doc.concerned_departments){
-				for(let i=0;i<cur_frm.doc.concerned_departments.length;i++){
-					if(cur_frm.doc.concerned_departments[i].action == "Submitted"){
-						status = 1
-					}
-					else{
-						status = 0
-						break;  
-					}
-				}
-			}
-			if(status==0){
-				frappe.throw({
-					title: __('Mendatory'),
-					indicator: 'red',
-					message: __("Please Wait All Departments To response Before Approve !!")
-				});
-				frappe.validated = false;
-			}
+		// console.log(frm.doc.workflow_state)
+		// console.log(frm.selected_workflow_action)
+		// if (
+        //     frm.doc.workflow_state == "موجه" &&
+        //     frm.selected_workflow_action == "اعتمد"
+        // ){
+		// 	let status = 0
+		// 	if(cur_frm.doc.concerned_departments){
+		// 		for(let i=0;i<cur_frm.doc.concerned_departments.length;i++){
+		// 			if(cur_frm.doc.concerned_departments[i].action == "Submitted"){
+		// 				status = 1
+		// 			}
+		// 			else{
+		// 				status = 0
+		// 				break;  
+		// 			}
+		// 		}
+		// 	}
+		// 	if(status==0){
+		// 		frappe.throw({
+		// 			title: __('Mendatory'),
+		// 			indicator: 'red',
+		// 			message: __("Please Wait All Departments To response Before Approve !!")
+		// 		});
+		// 		frappe.validated = false;
+		// 	}
 
-		}
+		// }
 	},
 	order_type:function(frm){
 		//debugger;
