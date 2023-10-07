@@ -1,0 +1,126 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-10-07 20:25:39.510763",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "account",
+  "section_break_2",
+  "jan",
+  "feb",
+  "mar",
+  "apr",
+  "may",
+  "jun",
+  "column_break_9",
+  "jul",
+  "aug",
+  "sep",
+  "oct",
+  "nov",
+  "dec",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "jan",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jan"
+  },
+  {
+   "fieldname": "feb",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Feb"
+  },
+  {
+   "fieldname": "mar",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Mar"
+  },
+  {
+   "fieldname": "apr",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Apr"
+  },
+  {
+   "fieldname": "may",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "May"
+  },
+  {
+   "fieldname": "jun",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Jun"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "jul",
+   "fieldtype": "Currency",
+   "label": "Jul"
+  },
+  {
+   "fieldname": "aug",
+   "fieldtype": "Currency",
+   "label": "Aug"
+  },
+  {
+   "fieldname": "sep",
+   "fieldtype": "Currency",
+   "label": "Sep"
+  },
+  {
+   "fieldname": "oct",
+   "fieldtype": "Currency",
+   "label": "Oct"
+  },
+  {
+   "fieldname": "nov",
+   "fieldtype": "Currency",
+   "label": "Nov"
+  },
+  {
+   "fieldname": "dec",
+   "fieldtype": "Currency",
+   "label": "Dec"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "label": "Total",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-10-07 20:45:57.687505",
+ "modified_by": "Administrator",
+ "module": "Alshabab Sc",
+ "name": "Budget Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -405,8 +405,8 @@ function check(frm){
 			frm.set_df_property("player_name", "reqd", 0);
 			frm.set_df_property("reward_amount", "reqd", 0);
 			frm.set_df_property("employee", "reqd", 1);
-			frm.set_df_property("start_date", "reqd", 1);
-			frm.set_df_property("end_date", "reqd", 1);
+			// frm.set_df_property("start_date", "reqd", 1);
+			// frm.set_df_property("end_date", "reqd", 1);
 			cur_frm.toggle_display("issue_section",0);
 			cur_frm.toggle_display("contract_section",1);
 		}

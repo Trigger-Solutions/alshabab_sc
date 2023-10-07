@@ -26,6 +26,8 @@ class Requests(Document):
 		for item in self.concerned_departments:
 			requests_tasks_doc = frappe.new_doc('Requests Tasks')
 			requests_tasks_doc.refrence_name = item.name
+			requests_tasks_doc.requested_department = self.department
+			requests_tasks_doc.employee = self.employee_living
 			requests_tasks_doc.order_type = self.order_type
 			requests_tasks_doc.comment = comment
 			requests_tasks_doc.request_date = self.request_date
