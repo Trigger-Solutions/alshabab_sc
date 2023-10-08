@@ -8,8 +8,7 @@ frappe.ui.form.on('Budget Details', {
 			var d = locals[cdt][cdn];
 			return {
 				filters: {
-					"company": frm.doc.company,
-					"is_group": 0
+					"company": frm.doc.company
 				}
 			};
 		});	
